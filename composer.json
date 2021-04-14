@@ -1,0 +1,39 @@
+{
+  "name": "hihuangwei/laravel_cas_server",
+  "description": "A laravel package provides CAS server implementation",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "hihuangwei",
+      "email": "hihuangwei@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "ext-dom": "*",
+    "illuminate/support": "^5.8|^6.0|^7.0|^8.0",
+    "doctrine/dbal": "^2.5",
+    "guzzlehttp/guzzle": "^6.2"
+  },
+  "require-dev": {
+    "mockery/mockery": "^1.0",
+    "phpunit/phpunit": "^6.0|^7.0",
+    "orchestra/testbench": "3.5.*|3.6.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hihuangwei\\CAS\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "classmap": []
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Hihuangwei\\CAS\\CASServerServiceProvider"
+      ]
+    }
+  }
+}
